@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040303"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:onClick="starttimmer"
+        app:cardBackgroundColor="#090707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/strt" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:onClick="stoptimmer"
+        app:cardBackgroundColor="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/stopbutton" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="-1750dp"
+        android:onClick="resettimmer"
+        android:translationY="5dp"
+        app:cardBackgroundColor="#050404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/reboot" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/timrcard"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#0B0A0A"
+        app:cardBackgroundColor="#020202"
+        app:cardCornerRadius="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardview2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0CEFEBEB"
+            android:backgroundTint="#0CF3EEEE"
+            app:srcCompat="@drawable/stopwatchnew" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="164dp"
+            android:layout_height="36dp"
+            android:hint="00:00:00"
+            android:textAlignment="center"
+            android:textColor="#0B0A0A"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:translationX="20dp"
+            android:translationY="100dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/exitcd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="#090808"
+        app:layout_constraintBottom_toTopOf="@+id/cardview3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" >
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/exit" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
